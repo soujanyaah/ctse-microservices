@@ -1,5 +1,6 @@
 package com.ctse.product.controller.dto;
 
+import com.ctse.product.persistance.model.Product;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,7 +24,7 @@ public class ProductDto {
     private String code;
     private double price;
 
-    public static ProductDto convertToDto(com.ctse.product.persistance.model.Product product) {
+    public static ProductDto convertToDto(Product product) {
         ProductDto productDto =
                 ProductDto.builder()
                         ._id(product.get_id())
