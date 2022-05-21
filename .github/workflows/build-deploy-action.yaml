@@ -22,5 +22,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_SOUJI_USERNAME }}/abc-order:${{ github.sha }} 
-    
+          tags: ${{ secrets.DOCKER_SOUJI_USERNAME }}/abc-order:${{ github.sha }}
